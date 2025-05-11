@@ -17,7 +17,7 @@ This is a basic recipe app built using React Native with Expo. It displays a var
 🚀 Getting Started
 
 1. Clone the repo
-   git clone https://github.com/your-username/recipe-app.git
+   git clone https://github.com/HimanshuMirwal/Recipe-App-.git
 2. cd recipe-app
    npm install
    # or
