@@ -1,4 +1,4 @@
-class Meal {
+class Recipe {
   id: string;
   categoryIds: string[];
   title: string;
@@ -43,4 +43,4 @@ class Meal {
   }
 }
 
-export default Meal;
+export default Recipe;

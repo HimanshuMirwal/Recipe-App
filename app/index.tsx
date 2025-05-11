@@ -85,7 +85,7 @@ export default function Index() {
         <Stack.Screen
           name="MealDetailScreen"
           component={MealDetailScreen}
-          options={{ title: "Meal Detail" }}
+          options={{ title: "Recipe Detail" }}
         />
       </Stack.Navigator>
       </Provider>

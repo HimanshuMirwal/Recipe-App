@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "Meal",
-    "slug": "Meal",
+    "name": "Recipe",
+    "slug": "Recipe",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "backgroundColor":"#24180f",
-    "scheme": "meal",
+    "scheme": "recipe",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

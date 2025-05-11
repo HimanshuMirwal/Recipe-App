@@ -15,7 +15,7 @@ function FavouriteScreen({
   // const FavMealContextApi = useContext(FavouriteContext);
   const FavMealContextApi = useSelector((state:any)=>state?.favouriteMeal?.ids);
 
-  const meal = MEALS.filter((data: any) =>
+  const recipe = MEALS.filter((data: any) =>
     FavMealContextApi.includes(data.id)
   );
 
@@ -41,7 +41,7 @@ function FavouriteScreen({
     navigation.navigate("Meals");
   }
 
-  if (meal.length <= 0) {
+  if (recipe.length <= 0) {
     return (
       <View
         style={{
@@ -74,7 +74,7 @@ function FavouriteScreen({
   return (
     <View style={styles.container}>
       <FlatList
-        data={meal}
+        data={recipe}
         renderItem={(data: any) => RenderItem(data.item)}
         keyExtractor={(data: any) => data.id}
         contentContainerStyle={styles.listHolder}

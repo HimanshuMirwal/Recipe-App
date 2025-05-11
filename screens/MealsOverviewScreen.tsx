@@ -14,7 +14,7 @@ function MealsOverviewScreen({
 }) {
   const categoryId = route?.params?.categoryId || "";
 
-  const meal = MEALS.filter((data: any) =>
+  const recipe = MEALS.filter((data: any) =>
     data.categoryIds.includes(categoryId)
   );
   const categoryTitle = CATEGORIES.find(
@@ -50,7 +50,7 @@ function MealsOverviewScreen({
   return (
     <View style={styles.container}>
       <FlatList
-        data={meal}
+        data={recipe}
         renderItem={(data: any) => RenderItem(data.item)}
         keyExtractor={(data: any) => data.id}
         contentContainerStyle={styles.listHolder}

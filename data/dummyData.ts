@@ -1,5 +1,5 @@
 import Category from "../models/category";
-import Meal from "../models/meal";
+import Recipe from "../models/recipe";
 
 export const CATEGORIES = [
   new Category("c1", "Italian", "#f5428d"),
@@ -29,7 +29,7 @@ export const MEALS: {
   isVegetarian: boolean;
   isLactoseFree: boolean;
 }[] = [
-  new Meal(
+  new Recipe(
     "m1",
     ["c1", "c2"],
     "Spaghetti with Tomato Sauce",
@@ -60,7 +60,7 @@ export const MEALS: {
     true
   ),
 
-  new Meal(
+  new Recipe(
     "m2",
     ["c2"],
     "Toast Hawaii",
@@ -86,7 +86,7 @@ export const MEALS: {
     false
   ),
 
-  new Meal(
+  new Recipe(
     "m3",
     ["c3"],
     "Classic Hamburger",
@@ -115,7 +115,7 @@ export const MEALS: {
     true
   ),
 
-  new Meal(
+  new Recipe(
     "m4",
     ["c4"],
     "Wiener Schnitzel",
@@ -148,7 +148,7 @@ export const MEALS: {
     false
   ),
 
-  new Meal(
+  new Recipe(
     "m5",
     ["c2", "c5", "c10"],
     "Salad with Smoked Salmon",
@@ -180,7 +180,7 @@ export const MEALS: {
     true
   ),
 
-  new Meal(
+  new Recipe(
     "m6",
     ["c6", "c10"],
     "Delicious Orange Mousse",
@@ -213,7 +213,7 @@ export const MEALS: {
     false
   ),
 
-  new Meal(
+  new Recipe(
     "m7",
     ["c7"],
     "Pancakes",
@@ -242,7 +242,7 @@ export const MEALS: {
     false
   ),
 
-  new Meal(
+  new Recipe(
     "m8",
     ["c8"],
     "Creamy Indian Chicken Curry",
@@ -273,7 +273,7 @@ export const MEALS: {
     true
   ),
 
-  new Meal(
+  new Recipe(
     "m9",
     ["c9"],
     "Chocolate Souffle",
@@ -319,7 +319,7 @@ export const MEALS: {
     true,
     false
   ),
-  new Meal(
+  new Recipe(
     "m10",
     ["c2", "c5", "c10"],
     "Asparagus Salad with Cherry Tomatoes",
