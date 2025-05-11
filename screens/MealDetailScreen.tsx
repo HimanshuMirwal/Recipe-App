@@ -2,12 +2,14 @@ import IconButton from "@/Components/IconButton";
 import { MEALS } from "@/data/dummyData";
 import { useEffect } from "react";
 import {
-    Image,
-    ScrollView,
-    StyleSheet,
-    Text,
-    View
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View
 } from "react-native";
+import { useDispatch, useSelector } from "react-redux";
+import { addFav, removeFav } from "../store/redux/Favourites";
 
 function MealDetailScreen({
   navigation,
@@ -16,23 +18,37 @@ function MealDetailScreen({
   navigation: any;
   route: any;
 }) {
+
+  // const FavouriteCtx = useContext(FavouriteContext);
+  const FavouriteCtx = useSelector((state:any)=>state?.favouriteMeal?.ids);
+
+  const dispatch = useDispatch();
+
   const recipeId = route?.params?.mealId || "";
 
   const recipe = MEALS.find((data: any) => data.id == recipeId);
 
+  const isFavMeal = FavouriteCtx.includes(recipeId);
+
 
    function handleHeaderButton(){
-
+      if(isFavMeal){
+        dispatch(removeFav({id : recipeId}))
+        // FavouriteCtx.removeFav(recipeId)
+      }else{
+        dispatch(addFav({id : recipeId}))
+        // FavouriteCtx.addFav(recipeId)
+      }
    }
 
   useEffect(() => {
     navigation.setOptions({
       title: recipe?.title,
       headerRight: () => (
-       <IconButton onPress={handleHeaderButton} color={"#fff"} icon={"star"} />
+       <IconButton onPress={handleHeaderButton} color={"#fff"} icon={isFavMeal ? "star" : "star-outline"} />
       ),
     });
-  }, [recipeId, navigation]);
+  }, [recipeId, navigation, isFavMeal]);
 
   return (
     <View style={styles.mainContainer}>
