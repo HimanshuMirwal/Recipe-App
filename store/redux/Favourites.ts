@@ -1,14 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
+interface FavouritesState {
+  ids: string[];
+}
+
+const initialState: FavouritesState = {
+  ids: [],
+};
+
 const favouriteSlice = createSlice({
   name: "favourites",
-  initialState: {
-    ids: [],
-  },
+  initialState,
   reducers: {
-    addFav: (state, action) => {
+    addFav: (state, action:any) => {
         state.ids.push(action.payload.id)
      },
-    removeFav: (state, action) => {
+    removeFav: (state, action:any) => {
         state.ids.splice(state.ids.indexOf(action.payload.id), 1)
     },
   },
