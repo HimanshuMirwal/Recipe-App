@@ -1,50 +1,113 @@
-# Welcome to your Expo app 👋
+<h1 align="center">🍽️ Recipe App</h1>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="center">
+  A simple and elegant food recipe app built with <b>React Native</b> using <b>Expo</b>.
+</p>
 
-## Get started
+<p align="center">
+  Explore delicious meals from various cuisines like <b>Italian</b>, <b>German</b>, and more!
+</p>
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Features
 
-2. Start the app
+✅ Browse recipes by cuisine  
+✅ View detailed recipe information  
+✅ Add/remove recipes to your **Wishlist**  
+✅ Works on both Android & iOS  
+✅ No backend — completely offline  
+✅ Built with Expo for fast development & testing
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📸 Screenshots
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/06c788c5-e5b1-44e2-aa91-18bc320c19f8" width="30%" style="margin-right:10px;" />
+  <img src="https://github.com/user-attachments/assets/4f71c365-be88-497d-bffb-9e55177ce100" width="30%" style="margin-right:10px;" />
+  <img src="https://github.com/user-attachments/assets/a9948a7e-031f-4fd5-bd15-38d58621dbfa" width="30%" />
+</p>
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## ⚙️ Getting Started
 
-When you're ready, run:
+Follow these simple steps to run the project locally:
 
-```bash
-npm run reset-project
-```
+### 🧾 Prerequisites
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Node.js & npm
+- Git
+- Expo CLI:  
+  ```bash
+  npm install -g expo-cli
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+  
+📦 Installation
+Clone the repository
 
-## Join the community
 
-Join our community of developers creating universal apps.
+git clone https://github.com/HimanshuMirwal/Recipe-App.git
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+cd Recipe-App
+
+npm install
+
+Run the app
+   
+npm run start
+
+📲 How to Run
+✅ Option 1: Using Emulator
+Start your Android or iOS emulator and run npm run start. Expo will launch the app on your virtual device.
+
+✅ Option 2: Using a Real Device
+Install the Expo Go app:
+
+Android (Play Store)
+
+iOS (App Store)
+
+Scan the QR code shown in your terminal or browser when running the app.
+
+
+
+📲 How to Run
+✅ Option 1: Using Emulator
+Start your Android or iOS emulator and run npm run start. Expo will launch the app on your virtual device.
+
+✅ Option 2: Using a Real Device
+Install the Expo Go app:
+
+Android (Play Store)
+
+iOS (App Store)
+
+Scan the QR code shown in your terminal or browser when running the app.
+
+🧠 Project Overview
+Recipe-App/
+├── App.js
+├── assets/
+├── components/
+├── navigation/
+├── screens/
+├── data/
+└── ...
+
+🧑‍💻 Author
+Himanshu Mirwal
+GitHub: @HimanshuMirwal
+
+⭐️ Support
+If you found this project helpful or inspiring, please consider giving it a ⭐️ on GitHub!
+
+---
+
+
+
+
